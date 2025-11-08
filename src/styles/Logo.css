@@ -1,0 +1,14 @@
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-container h2 {
+  font-size: 1.5rem;
+}
+
+.logo {
+  color: #22d3c1;
+  font-size: 1.8rem;
+}

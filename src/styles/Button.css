@@ -1,0 +1,24 @@
+.button {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  background-color: transparent;
+  padding: 8px;
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--mint-color);
+  border-color: var(--mint-color-hover);
+  color: black;
+}
+
+.button:active {
+  background-color: var(--mint-color-active);
+}
+
+.button-current {
+  background-color: black;
+  color: white;
+}

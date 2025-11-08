@@ -1,0 +1,9 @@
+.recommended-container h2 {
+  margin-bottom: 8px;
+}
+
+.recommended-btns {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

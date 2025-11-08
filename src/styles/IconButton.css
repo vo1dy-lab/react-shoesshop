@@ -1,0 +1,18 @@
+.icon-btn {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  background-color: var(--mint-color-hover);
+  color: var(--mint-color);
+}
+
+.icon-btn:active {
+  background-color: var(--mint-color-active);
+}
