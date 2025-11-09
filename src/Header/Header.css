@@ -1,6 +1,7 @@
 .header-container {
   height: 56px;
   background-color: #fdfdfd;
+  border: 1px solid #d7d7d7;
   box-shadow: 0 0 4px rgb(202, 202, 202);
 }
 
