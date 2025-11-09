@@ -1,3 +1,4 @@
+import "./App.css";
 import { useState } from "react";
 import Header from "./Header/Header";
 import Recommended from "./Recommended/Recommended";
@@ -43,10 +44,18 @@ const App = () => {
 
   return (
     <div className="grid">
-      <Header />
-      <Sidebar onChange={handleChange} />
-      <Recommended recommended={recommended} />
-      <Products result={result} />
+      <div className="header-grid">
+        <Header />
+      </div>
+      <div className="sidebar-grid">
+        <Sidebar onChange={handleChange} />
+      </div>
+      <div className="recommended-grid">
+        <Recommended recommended={recommended} />
+      </div>
+      <div className="products-grid">
+        <Products result={result} />
+      </div>
     </div>
   );
 };

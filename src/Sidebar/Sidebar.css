@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 16px;
   max-width: 240px;
+  height: 100%;
   padding: 16px;
   background-color: #ffffff;
   border: 1px solid #d7d7d7;
