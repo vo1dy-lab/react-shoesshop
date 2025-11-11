@@ -2,23 +2,23 @@ import "./Colors.css";
 import RadioButton from "../../components/RadioButton";
 
 const Colors = ({ onChange }) => {
-  const colors = ["All", "Black", "Blue", "Red", "Green", "White"];
+  const colors = ["all", "black", "blue", "red", "green", "white"];
   const colorMap = {
-    All: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-    Black: "#000000",
-    Blue: "#1e90ff",
-    Red: "#ff0000",
-    Green: "#32cd32",
-    White: "#ffffff",
+    all: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+    black: "#000000",
+    blue: "#1e90ff",
+    red: "#ff0000",
+    green: "#32cd32",
+    white: "#ffffff",
   };
   return (
     <div className="price-container">
       <h2>Colors</h2>
       {colors.map((color) => (
         <RadioButton
-          key={`colors-${color.toLowerCase().trim()}`}
+          key={`colors-${color}`}
           name="colors"
-          id={`colors-${color.toLowerCase().trim()}`}
+          id={`colors-${color}`}
           value={color}
           color={colorMap[color]}
           onChange={onChange}

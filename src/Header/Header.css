@@ -15,9 +15,3 @@
   padding: 0 16px;
   gap: 16px;
 }
-
-.nav-btns {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}

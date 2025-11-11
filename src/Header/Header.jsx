@@ -1,27 +1,15 @@
 import "./Header.css";
-import { LuHeart } from "react-icons/lu";
-import { LuShoppingCart } from "react-icons/lu";
-import { LuUser } from "react-icons/lu";
 import Logo from "../components/Logo";
 import Input from "../components/Input";
-import IconButton from "../components/IconButton";
+import HeaderNav from "../components/HeaderNav";
 
-const Header = () => {
-  const icons = [
-    <LuHeart key={"heart"} />,
-    <LuShoppingCart key={"cart"} />,
-    <LuUser key={"user"} />,
-  ];
+const Header = ({ onChange, inputValue }) => {
   return (
     <header className="header-container">
       <div className="header-wrapper">
         <Logo />
-        <Input />
-        <div className="nav-btns">
-          {icons.map((icon) => (
-            <IconButton icon={icon} key={icon.key} />
-          ))}
-        </div>
+        <Input onChange={onChange} inputValue={inputValue} />
+        <HeaderNav />
       </div>
     </header>
   );
